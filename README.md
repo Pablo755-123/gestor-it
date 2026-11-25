@@ -41,9 +41,13 @@ Está hecha en **PowerShell + WPF**. No necesita RSAT, ni instalar agentes en lo
 
 ## Instalación
 
-1. Descarga el repositorio (Code > Download ZIP) y descomprímelo.
-2. Copia `config.example.json` a `config.json` y pon los datos de tu red (ver abajo). Es opcional: sin él, la app funciona igual pero sin servidores iniciales ni pantallas.
-3. Ejecuta **`Instalar.bat`**.
+1. Descarga **`GestorIT.zip`** de la [última versión](https://github.com/Pablo755-123/gestor-it/releases/latest) y descomprímelo.
+2. Ejecuta **`Instalar.bat`**. Si Windows avisa de que viene de Internet: "Más información" > "Ejecutar de todas formas".
+3. Al abrirse, si tu PC está en el dominio, se conecta sola. Si no, pulsa **Cambiar conexión** y escribe tu dominio y tu cuenta (`DOMINIO\usuario`). Marca "Recordar" y se guarda cifrada con Windows.
+
+Ya está: añade tus servidores con **Añadir servidor** y a trabajar.
+
+Opcional: antes de instalar, copia `config.example.json` como `config.json` y pon los datos de tu red (ver abajo) para tener una lista inicial de servidores, NetBox o la sección de pantallas. **Nunca pongas contraseñas en `config.json`**: no hacen falta.
 
 Se instala en `%LOCALAPPDATA%\Programs\GestorIT`, crea accesos directos en el menú Inicio y en el escritorio, y se abre. Haz clic derecho en su icono de la barra de tareas y elige **Anclar a la barra de tareas**.
 

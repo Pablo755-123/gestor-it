@@ -1,0 +1,42 @@
+﻿GESTOR IT - Inicio rápido
+=========================
+
+1. Descomprime este ZIP en cualquier carpeta.
+
+2. Haz doble clic en Instalar.bat
+   - Se instala en tu usuario (no necesita permisos de administrador).
+   - Crea accesos directos en el menú Inicio y en el escritorio, y se abre.
+   - Si Windows avisa de que el archivo viene de Internet, pulsa "Más información" > "Ejecutar de todas formas".
+
+3. Al abrirse:
+   - Si tu PC está unido al dominio, se conecta sola con tu sesión de Windows.
+   - Si no, pulsa "Cambiar conexión" (abajo a la izquierda) y escribe:
+       Dominio o controlador:  tu dominio (ej. empresa.local) o la IP de un controlador de dominio
+       Usuario:                DOMINIO\usuario
+       Contraseña:             la de esa cuenta
+     Marca "Recordar la cuenta en este equipo" para no repetirlo. Se guarda cifrada
+     con Windows (DPAPI): solo tu usuario, en este PC, puede leerla.
+
+4. Añade tus servidores con "Añadir servidor" (RDP para Windows, SSH para Linux).
+
+Para anclarla: clic derecho en su icono de la barra de tareas > Anclar a la barra de tareas.
+
+
+OPCIONAL: config.json
+---------------------
+Copia config.example.json como config.json en esta carpeta ANTES de ejecutar Instalar.bat
+si quieres:
+  - una lista inicial de servidores para todo el equipo de IT,
+  - el botón de NetBox,
+  - la sección de pantallas de dashboard (kioscos de planta).
+Nunca pongas contraseñas en config.json: no hacen falta.
+
+
+REQUISITOS
+----------
+- Windows 10 u 11 (Windows PowerShell 5.1, ya incluido).
+- Para ver sesiones, pantallas y retirar equipos: WMI permitido en el firewall de esos equipos.
+- Para PowerShell remoto: WinRM (la app ofrece activarlo al conectar).
+- Para gestionar usuarios y equipos: una cuenta con permisos en el Directorio Activo.
+
+Más información: https://github.com/Pablo755-123/gestor-it
