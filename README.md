@@ -41,7 +41,7 @@ Está hecha en **PowerShell + WPF**. No necesita RSAT, ni instalar agentes en lo
 
 ## Instalación
 
-1. Descarga **`GestorIT.zip`** de la [última versión](https://github.com/Pablo755-123/gestor-it/releases/latest) y descomprímelo.
+1. Entra en la [última versión](https://github.com/Pablo755-123/gestor-it/releases/latest), descarga **Source code (zip)** y descomprímelo.
 2. Ejecuta **`Instalar.bat`**. Si Windows avisa de que viene de Internet: "Más información" > "Ejecutar de todas formas".
 3. Al abrirse, si tu PC está en el dominio, se conecta sola. Si no, pulsa **Cambiar conexión** y escribe tu dominio y tu cuenta (`DOMINIO\usuario`). Marca "Recordar" y se guarda cifrada con Windows.
 
