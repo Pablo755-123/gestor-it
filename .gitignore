@@ -1,0 +1,3 @@
+# Configuración de tu red: no se sube (usa config.example.json como plantilla)
+config.json
+*.log

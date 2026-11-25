@@ -1,0 +1,19 @@
+{
+  "DefaultController": "",
+  "NetBoxUrl": "",
+
+  "Kiosks": {
+    "Enabled": false,
+    "Title": "Pantallas",
+    "Prefix": "KIOSK-",
+    "Program": "Dashboard.exe",
+    "AppName": "Dashboard",
+    "Server": ""
+  },
+
+  "DefaultServers": [
+    { "Name": "DC01",        "Host": "dc01.ejemplo.local",   "Group": "Dominio",   "Notes": "Controlador de dominio" },
+    { "Name": "FICHEROS",    "Host": "files.ejemplo.local",  "Group": "General" },
+    { "Name": "Linux web",   "Host": "web01.ejemplo.local",  "Group": "Linux", "Protocol": "ssh", "User": "admin" }
+  ]
+}
